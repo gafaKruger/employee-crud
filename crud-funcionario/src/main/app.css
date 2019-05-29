@@ -1,0 +1,48 @@
+:root {
+  --bg-dark: #1n2f3a;
+  --header-height: 100px;
+  --aside-width: 255px;
+  --footer-height: 48px;
+
+  --shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.site {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 1fr 7fr 1fr;
+  /*
+    divide o layout em áreas
+   */
+  grid-template-areas:
+    "menu header header"
+    "menu content content"
+    "menu footer footer";
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.header {
+  grid-area: header;
+}
+
+.menu-area {
+  grid-area: menu;
+  background: #00223e;
+  background: -webkit-linear-gradient(to bottom, #00223e, #00223e);
+  background: linear-gradient(to bottom, #00223e, #00223e);
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}

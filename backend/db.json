@@ -1,0 +1,18 @@
+{
+  "funcionario": [
+    {
+      "nome": "ABC",
+      "sobrenome": "DEF",
+      "email": "aaa@email.com",
+      "numeroPis": "987654321",
+      "id": 2
+    },
+    {
+      "nome": "Teste 2",
+      "sobrenome": "asdkj",
+      "email": "abx@email.com",
+      "numeroPis": "203123245",
+      "id": 3
+    }
+  ]
+}
